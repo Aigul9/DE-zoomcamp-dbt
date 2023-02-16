@@ -1,3 +1,6 @@
+# install all dependencies
+dbt deps
+
 # run all
 dbt run
 
