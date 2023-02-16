@@ -21,3 +21,6 @@ dbt build
 dbt build --select stg_green_tripdata
 # build a model + everything it needs
 dbt build --select +fact_trips
+
+# test
+dbt test
