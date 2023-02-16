@@ -14,3 +14,10 @@ dbt seed
 
 # drop and recreate
 dbt seed --full-refresh
+
+# build everything
+dbt build
+# build a model
+dbt build --select stg_green_tripdata
+# build a model + everything it needs
+dbt build --select +fact_trips
