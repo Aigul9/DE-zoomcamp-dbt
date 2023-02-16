@@ -1,0 +1,7 @@
+# run all
+dbt run
+
+# run a model
+dbt run -m stg_green_tripdata
+dbt run --select stg_green_tripdata
+dbt run -f stg_green_tripdata
