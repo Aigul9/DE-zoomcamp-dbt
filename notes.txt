@@ -1,0 +1,26 @@
+# install all dependencies
+dbt deps
+
+# run all
+dbt run
+
+# run a model
+dbt run -m stg_green_tripdata
+dbt run --select stg_green_tripdata
+dbt run -f stg_green_tripdata
+
+# run seed or append data to a seed
+dbt seed
+
+# drop and recreate
+dbt seed --full-refresh
+
+# build everything
+dbt build
+# build a model
+dbt build --select stg_green_tripdata
+# build a model + everything it needs
+dbt build --select +fact_trips
+
+# test
+dbt test
