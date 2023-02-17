@@ -6,6 +6,7 @@ sources:
     tables:
       - name: external_green_tripdata
       - name: external_yellow_tripdata
+      - name: external_trip_data
 models:
   - name: stg_green_tripdata
     description: >
